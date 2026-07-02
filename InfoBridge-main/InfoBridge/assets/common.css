@@ -1,0 +1,269 @@
+/* =========================
+   RESET & BASE STYLES
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #b1b9d9, #e4d7f2);
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 35px;
+    background: rgba(253, 245, 247, 0.85);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+}
+
+/* Logo */
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo-section img {
+    width: 35px;
+    height: 35px;
+}
+
+.site-name {
+    font-size: 24px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #8c5aa0, #667eea);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* =========================
+   AUTH / ACTION BUTTONS
+========================= */
+.auth-buttons button,
+.primary-btn {
+    margin-left: 10px;
+    padding: 9px 18px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(135deg, #ab7ed2, #667eea);
+    color: white;
+    border-radius: 20px;
+    font-weight: 600;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.auth-buttons button:hover,
+.primary-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(102,126,234,0.4);
+}
+
+/* =========================
+   CONTAINER HELPERS
+========================= */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+}
+
+.page-container {
+    padding: 40px 60px;
+}
+
+/* =========================
+   FORM BOX (LOGIN / SIGNUP / GUIDES)
+========================= */
+.form-box {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    width: 400px;
+    border-radius: 16px;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.25);
+    animation: fadeUp 0.8s ease;
+}
+
+/* Animation */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Headings */
+.form-box h2,
+.page-title {
+    text-align: center;
+    margin-bottom: 28px;
+    font-size: 34px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Inputs */
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 18px;
+    border-radius: 10px;
+    border: 1px solid #d1d5db;
+    font-size: 14px;
+    background-color: #f9fafb;
+    transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102,126,234,0.25);
+}
+
+/* Submit / Primary button */
+.submit-btn {
+    width: 100%;
+    padding: 13px;
+    background: linear-gradient(135deg, #7a89cc, #764ba2);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(102,126,234,0.45);
+}
+
+/* =========================
+   CARDS (SERVICES / SCHEMES)
+========================= */
+.card {
+    background: rgba(255,255,255,0.9);
+    padding: 22px;
+    border-radius: 16px;
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.18);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 45px rgba(0,0,0,0.3);
+}
+
+/* =========================
+   SEARCH BOX
+========================= */
+.search-box {
+    width: 100%;
+    max-width: 420px;
+    display: block;
+    margin: 0 auto 40px auto;
+    padding: 14px;
+    border-radius: 12px;
+    border: 1px solid #d1d5db;
+    background-color: #f9fafb;
+}
+
+/* =========================
+   UTILITIES
+========================= */
+.hidden {
+    display: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mt-20 { margin-top: 20px; }
+.mb-20 { margin-bottom: 20px; }
+
+/* =========================
+   RESPONSIVE (MOBILE)
+========================= */
+@media (max-width: 768px) {
+    .page-container {
+        padding: 20px;
+    }
+
+    .form-box {
+        width: 90%;
+    }
+
+    .navbar {
+        padding: 10px 20px;
+    }
+
+    .site-name {
+        font-size: 20px;
+    }
+}
+/* =========================
+   GUIDANCE PAGE CENTERING
+========================= */
+.services-container {
+    min-height: calc(100vh - 70px); /* height minus navbar */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+/* =========================
+   SERVICES INLINE GRID
+========================= */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Service buttons */
+.service-card {
+    background: rgba(255,255,255,0.95);
+    padding: 22px;
+    border-radius: 16px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.18);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 45px rgba(0,0,0,0.3);
+}
+
+

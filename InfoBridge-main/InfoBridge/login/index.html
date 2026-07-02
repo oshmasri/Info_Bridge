@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>InfoBridge | Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="navbar">
+        <div class="logo-section">
+            <img src="../assets/logo.png" alt="InfoBridge Logo">
+            <span class="site-name">InfoBridge</span>
+        </div>
+
+        <div class="auth-buttons">
+            <button onclick="showLogin()">Login</button>
+            <button onclick="showSignup()">Sign Up</button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+   <div class="container">
+
+  <!-- SIGNUP FORM -->
+  <div class="form-box" id="signupForm">
+    <h2>Sign Up</h2>
+
+    <input type="text" id="signupName" placeholder="Full Name">
+    <input type="text" id="signupPhone" placeholder="Phone Number">
+    <input type="email" id="signupEmail" placeholder="Email">
+    <input type="password" id="signupPassword" placeholder="Password">
+
+    <button type="button" class="submit-btn" id="signupBtn">
+      Create Account
+    </button>
+  </div>
+
+  <!-- LOGIN FORM -->
+  <div class="form-box hidden" id="loginForm">
+    <h2>Login</h2>
+
+    <input type="email" id="loginEmail" placeholder="Email">
+    <input type="password" id="loginPassword" placeholder="Password">
+
+    <button type="button" class="submit-btn" id="loginBtn">
+      Login
+    </button>
+  </div>
+
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

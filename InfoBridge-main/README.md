@@ -166,8 +166,8 @@ Open the `frontend/login/index.html` file using **VS Code Live Server**.
 
 ## 👨‍💻 Developed By
 
-**HarisaiSri**
+**Oshmasri**
 
-Artificial Intelligence Engineering Student
+CSE(Artificial Intelligence & Data Science) Student
 
 ---

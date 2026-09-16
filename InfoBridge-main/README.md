@@ -53,7 +53,7 @@ Many citizens find government procedures confusing due to complex documentation 
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/Harisaisri/InfoBridge.git
+git clone https://github.com/oshmasri/InfoBridge.git
 cd InfoBridge
 ```
 
